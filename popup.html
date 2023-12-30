@@ -3,19 +3,36 @@
 <head>
     <title>Krisp Extension</title>
     <style>
-        button {
-            border: none;
-            background: none;
+        html, body {
+            width: 128px;
+            height: 128px;
+            margin: 0;
             padding: 0;
+            border: none;
+            overflow: hidden;
+            box-sizing: border-box;
         }
-        button:focus {
+
+        button, img {
+            display: block;
+            border: none;
+            margin: 0;
+            padding: 0;
+            background: transparent;
             outline: none;
+        }
+
+        * {
+            box-sizing: border-box;
+            border: none;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
 <body>
 <button id="activate">
-    <img src="icon2_128.png" alt="Activate" width="128" height="128">
+    <img src="icon128.png" alt="Activate" width="128" height="128">
 </button>
 <script src="popup.js"></script>
 </body>

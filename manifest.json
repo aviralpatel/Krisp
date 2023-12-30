@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Krisp",
+  "version": "1.0",
+  "description": "Krisp: Elevate your tabs with exquisite wallpapers, live weather updates, and daily inspirational quotes, enriching your browsing experience",
+  "author": "Aviral Patel",
+  "permissions": [
+    "storage",
+    "https://chrome-extension-backend-dta3.onrender.com",
+    "activeTab",
+    "geolocation"
+  ],
+  "browser_action": {
+    "default_icon": "icon2_48.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "icon2.png",
+    "48": "icon2_48.png",
+    "128": "icon128.png"
+  },
+  "content_security_policy": "script-src 'self' https://kit.fontawesome.com; object-src 'self'; style-src 'self' 'unsafe-inline' https://kit.fontawesome.com;"
+}
